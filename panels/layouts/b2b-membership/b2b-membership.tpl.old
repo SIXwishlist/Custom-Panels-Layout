@@ -1,0 +1,244 @@
+<?php
+/**
+ * @file
+ * Template for Panopoly Sutro Double.
+ *
+ * Variables:
+ * - $css_id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ * panel of the layout. This layout supports the following sections:
+ */
+?>
+<div class="panel-display b2b-membership clearfix <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+  <div class="hero-panel">
+    <?php print $content['header']; ?>
+  </div>
+
+  <div class="row summary">
+    <div class="small-12 medium-8 large-8 small-centered medium-centered large-centered columns">
+      <?php print $content['summary'] ?>
+       <h2>With full B2B Marketing membership, you can access to over 200 exclusive pieces of research and reports</h2>
+    </div>
+  </div>
+   <div class="row plan-tabs">
+    <div class="small-4 columns">
+      <div class="plan-title">
+        <h2>Professional</h2>
+      </div>
+    </div>
+    <div class="small-4 columns">
+      <div class="plan-title">
+        <h2>Team</h2>
+      </div>
+    </div>
+    <div class="small-4 columns">
+      <div class="plan-title">
+        <h2>Enterprise</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row plans" data-equalizer>
+
+    <?php
+    function desc($i) { ?>
+      <ul class="accordion" data-accordion>
+        <li class="accordion-navigation active">
+          <a href="#panel-<?php print $i; ?>-1">Marketing Guides</a>
+          <div class="content active" id="panel-<?php print $i; ?>-1">
+            <h4>Best practice Guides</h4>
+            <p>In-depth insight into core marketing channels, giving you
+              full insight into the most current mythology to ensure
+              success.</p>
+            <h4>Beginners Guide</h4>
+            <p>For those starting out, or even for the experienced
+              professional unsure of one area, these guides get you off the
+              ground.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-2">Business Data</a>
+          <div class="content" id="panel-<?php print $i; ?>-2">
+            <h4>Benchmarking</h4>
+            <p>Covering key channel trend data, in context, enabling you to
+              measure your activity, to support success, or to set a stake in
+              the ground.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-3">Business Reports</a>
+          <div class="content" id="panel-<?php print $i; ?>-3">
+            <h4>Best practice Guides</h4>
+            <p>In-depth insight into core marketing channels, giving you
+              full insight into the most current mythology to ensure
+              success.</p>
+            <h4>Beginners Guide</h4>
+            <p>For those starting out, or even for the experienced
+              professional unsure of one area, these guides get you off the
+              ground.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-4">Toolkits</a>
+          <div class="content" id="panel-<?php print $i; ?>-4">
+            <h4>Templates</h4>
+            <p>Industry accepted templates, marketing planning and audits. Everything is in the planning; ensure you have all bases covered.</p>
+            <h4>Business cases</h4>
+            <p>Successfully gaining more capital expenditure for marketing has never been easy. Support your case, using these templates and accompanying case studies.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-5">Case Studies</a>
+          <div class="content" id="panel-<?php print $i; ?>-5">
+            <h4>Award Winning Case Studies</h4>
+            <p>Winning case studies from B2B Marketing Awards collated and archived, so you can match your plans against the best int he industry.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-6">News and Articles</a>
+          <div class="content" id="panel-<?php print $i; ?>-6">
+            <p>Get free access to and archive of tens of thousands of pieces of content, across all topics. It is unrivalled int he world of B2B marketing.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-7">Daily Newsletters</a>
+          <div class="content" id="panel-<?php print $i; ?>-7">
+            <p>Daily inbound access to the latest news, reports, events, and blogs, all aggregated by our editorial teams.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-8">Magazine</a>
+          <div class="content" id="panel-<?php print $i; ?>-8">
+            <p>The award winning B2B Marketing magazine, delivered to your desk each month.</p>
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel-<?php print $i; ?>-9">Event Discounts</a>
+          <div class="content" id="panel-<?php print $i; ?>-9">
+            <p>B2B Marketing puts on events attended by people from all over the world, from summits, conferences to forums. You get exclusive discounts to them all.</p>
+          </div>
+        </li>
+        <?php if ($i > 2): ?>
+          <li class="accordion-navigation">
+            <a href="#panel-<?php print $i; ?>-10">Insight Roundtables</a>
+            <div class="content" id="panel-<?php print $i; ?>-10">
+              <p>Be part of the industry evolution, by attending exclusive peer group discussion - sharing experiences, success ad failures. Meet your peer group and engage in issues relating to you.</p>
+            </div>
+          </li>
+          <li class="accordion-navigation">
+            <a href="#panel-<?php print $i; ?>-11">Account Management</a>
+            <div class="content" id="panel-<?php print $i; ?>-11">
+              <p>Cannot find what you are looking for, need advice on finding the right solution or just need a result with your membership? You will have a dedicated account manager, who will not leave you in the lurch. If they cannon help, they will find somebody who can.</p>
+            </div>
+          </li>
+        <?php endif; ?>
+      </ul><?php } ?>
+
+    <div class="medium-4 columns">
+      <ul class="pricing-table" data-equalizer-watch>
+        <li class="title">
+          <strong>1 user</strong>
+          Best for consultants and individuals
+        </li>
+        <li class="price">
+          <strong>&pound;39.50</strong> p/m +VAT
+        </li>
+        <li class="cta-button">
+          <a href="#" class="button radius" data-dropdown="professional-dropdown" aria-controls="professional-dropdown" aria-expanded="false">Get Started</a>
+          <ul id="professional-dropdown" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <li><?php print l('Professional - Monthly subscription', 'join/92'); ?></li>
+            <li><?php print l('Professional - Annual subscription', 'join/87'); ?></li>
+          </ul>
+        </li>
+        <li class="description">
+          <?php desc(1); ?>
+        </li>
+      </ul>
+    </div>
+
+    <div class="medium-4 columns">
+      <ul class="pricing-table" data-equalizer-watch>
+        <li class="title">
+          <strong>2-6 users</strong>
+          Best for smaller marketing teams
+        </li>
+        <li class="price">
+          Call for pricing <strong class="tel">020 7014 4920</strong> or
+        </li>
+        <li class="cta-button">
+          <a href="<?php print url('contact-us'); ?>" class="brdr-btn-white radius">Contact Us</a>
+        </li>
+        <li class="description">
+          <?php desc(2); ?>
+        </li>
+      </ul>
+    </div>
+
+    <div class="medium-4 columns">
+      <ul class="pricing-table" data-equalizer-watch>
+        <li class="title">
+          <strong>Company wide</strong>
+          Best for large sales and marketing teams and agencies
+        </li>
+        <li class="price">
+          Call for pricing <strong class="tel">020 7014 4920</strong> or
+        </li>
+        <li class="cta-button">
+          <a href="<?php print url('contact-us'); ?>" class="brdr-btn-white radius">Contact Us</a>
+        </li>
+        <li class="description">
+          <?php desc(3); ?>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="row guest-row">
+    <div class="medium-6 medium-centered columns">
+      <h2>Or Register as a Guest</h2>
+      <p>
+        Register a guest profile and enjoy access to the latest news and content,
+        receive a tailored email newsletter and contribute to the B2B blog.
+      </p>
+      <a href="<?php print url('user/register'); ?>" class="button radius">
+        Get Started
+      </a>
+    </div>
+  </div>
+
+	<div class="grey_wrap">
+		<div class="row members">
+			<div class="large-12 medium-12 small-12 columns">
+				<h2>Our Members</h2>
+				<?php print $content['our_members'] ?>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row what_we_do">
+		<div class="large-12 medium-12 small-12 columns">
+			<h2>What we do</h2>
+			<?php print $content['what_we_do'] ?>
+		</div>
+	</div>
+	
+<!-- testimonials -->
+	  <div class="grey_wrap testimonials">
+    <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <h2>Testimonials</h2>
+      </div>
+    </div>
+    <div class="row row-mb">
+        <?php print $content['testimonials'] ?>
+    </div>
+  </div>
+<!-- /testimonials -->
+
+	<div class="b2b-event-container b2b-event-footer clearfix panel-panel">
+		<div class="b2b-event-container-inner b2b-event-footer-inner panel-panel-inner">
+		  <?php print $content['footer']; ?>
+		</div>
+	</div>
+  
+</div><!-- /.b2b-event -->

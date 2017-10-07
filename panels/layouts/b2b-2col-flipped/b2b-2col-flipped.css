@@ -1,0 +1,36 @@
+/**
+ * @file
+ * b2b-2col-flipped panel layout
+**/
+
+.b2b-2col-flipped-container {
+  margin-bottom: 1em;
+}
+
+.b2b-2col-flipped-sidebar {
+  min-height: 1px;
+  width: 23.404%;
+  float: left;
+}
+
+  .b2b-2col-flipped-sidebar-inner {
+    margin-right: 20px;
+  }
+
+.b2b-2col-flipped-content {
+  float: left;
+  width: 76.596%;
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .b2b-2col-flipped-sidebar,
+  .b2b-2col-flipped-content {
+    width: 100%;
+    float: none;
+  }
+  
+  .b2b-2col-flipped-sidebar-inner {
+    margin-right: 0;
+  }
+}

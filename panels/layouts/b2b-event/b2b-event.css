@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Sutro Double panel layout
+**/
+
+.b2b-event-container {
+  margin-bottom: 1em;
+}
+
+.b2b-event-column {
+  min-height: 1px;
+  width: 51.064%;
+  float: left;
+}
+
+  .b2b-event-column-inner {
+    margin-right: 20px;
+  }
+
+  .b2b-event-column2 {
+    width: 48.936%;
+  }
+  
+    .b2b-event-column2-inner {
+      margin-right: 0;
+    }
+    
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .b2b-event-column,
+  .b2b-event-column2 {
+    width: 100%;
+    float: none;
+  }
+  
+  .b2b-event-column-inner {
+    margin-right: 0;
+  }
+}

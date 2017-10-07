@@ -1,0 +1,46 @@
+name = ch12i5b
+description = A custom theme for B2B Marketing based on Foundation 5.
+core = 7.x
+
+
+stylesheets[all][] = stylesheets/animate.css
+stylesheets[all][] = stylesheets/morphist.css
+stylesheets[all][] = stylesheets/slick.css
+stylesheets[all][] = stylesheets/swipebox.css
+stylesheets[all][] = stylesheets/gray.min.css
+stylesheets[all][] = stylesheets/flexnav.css
+stylesheets[all][] = stylesheets/app.css
+
+;scripts[] = js/libs/js.cookie.js
+scripts[] = js/waypoints.min.js
+scripts[] = bower_components/foundation/js/foundation.min.js
+;scripts[] = js/overthrow.js
+scripts[] = js/jquery.offcanvas.js
+scripts[] = js/EasePack.min.js
+scripts[] = js/request-animation-frame.js
+scripts[] = js/morphist.min.js
+scripts[] = js/tween-lite.js
+scripts[] = js/slick.min.js
+scripts[] = js/jquery.sidr.min.js
+scripts[] = js/jquery.gray.min.js
+scripts[] = js/jquery.swipebox.min.js
+scripts[] = js/app.js
+scripts[] = js/jquery.scrolldepth.min.js
+scripts[] = js/bombora.js
+
+regions[smartbar] = Smartbar
+regions[offcanvas_sidebar] = Off-canvas Sidebar
+regions[topbar] = Topbar
+regions[menu] = Menu
+regions[content] = Content
+regions[footer1] = Footer 1
+regions[footer1] = Footer 1
+regions[footer2] = Footer 2
+regions[footer3] = Footer 3
+regions[footer4] = Footer 4
+regions[footer5] = Footer 5
+regions[footer6] = Footer 6
+regions[underbar] = Underbar
+
+plugins[panels][layouts] = panels/layouts
+plugins[panels][styles] = panels/styles
